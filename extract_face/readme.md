@@ -1,7 +1,0 @@
-# 代码文件详解
-
-* extract_crop：基础文件，利用facenet_pytorch中mtcnn模型提取人脸
-* extract_video_celeb_DFDC_test、extract_video_celeb_DFDC_val、extract_video_dfd、extract_video_dfd_mani、extract_video_dfdc_0、extract_video_UADFV：字面意思理解
-* save_ff_face_img_all：提取FF++内的人脸，此处不同之处在于，由于要提取后续的mask，所以需要提权原始人脸的boxes，然后根据这个boxes分别截取原始视频，各种对应换脸视频的人脸区域。并且由于原始视频与换脸视频的部分视频存在尺寸不一致，这里需要把大尺寸的视频从中间截取，去掉部分两边的边缘像素，使得和小尺寸的视频大小一致便可。
-* save_ff_face_img_diff：提取pixel mask与ssim mask。此处需要注意的是，读取对应的人脸图片后，要将image的type转换为np.float32，因为默认的是无符号整型，导致溢出，会有很多噪声点。
-
