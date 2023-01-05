@@ -61,7 +61,7 @@ def main():
     args = parse_args()
     model_name = '{}_{}'.format(args.method, args.qp)
     exp_name = '{}_{}_{}'.format(args.backbone, args.method, args.qp)
-    wandb.init(project="Deepfake Detection", entity="linyuzhen810", name=exp_name)
+    wandb.init(project="Deepfake Detection", entity="your account", name=exp_name)
 
     # wandb.config = {
     #     "learning_rate": args.base_lr,

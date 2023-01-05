@@ -1,0 +1,17 @@
+dlib==19.24.0
+facenet_pytorch==2.5.2
+matplotlib==3.5.3
+numpy==1.19.5
+opencv_python_headless==4.6.0.66
+pandas==1.4.4
+Pillow==9.4.0
+pretrainedmodels==0.7.4
+retinaface==1.1.1
+scikit_image==0.19.3
+scikit_learn==1.2.0
+skimage==0.0
+torch==1.13.0+cu116
+torchcam==0.3.2
+torchsummary==1.5.1
+torchvision==0.14.0+cu116
+tqdm==4.64.1
